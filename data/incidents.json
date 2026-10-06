@@ -3,7 +3,7 @@
     "startedAt": "2026-09-28T00:00:12.276Z",
     "endedAt": null,
     "worst": "degraded",
-    "checks": 32,
+    "checks": 33,
     "areas": [
       "front-end",
       "backend",
@@ -15,7 +15,8 @@
       "backend/database",
       "experience/public.lcp",
       "frontend/document",
-      "frontend/bundles"
+      "frontend/bundles",
+      "frontend/dns"
     ],
     "blindSpots": 0,
     "durationMinutes": null
