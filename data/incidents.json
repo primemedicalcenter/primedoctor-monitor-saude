@@ -3,7 +3,7 @@
     "startedAt": "2026-09-28T00:00:12.276Z",
     "endedAt": null,
     "worst": "fail",
-    "checks": 93,
+    "checks": 94,
     "areas": [
       "front-end",
       "backend",
