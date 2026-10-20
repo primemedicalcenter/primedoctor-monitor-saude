@@ -3,7 +3,7 @@
     "startedAt": "2026-09-28T00:00:12.276Z",
     "endedAt": null,
     "worst": "fail",
-    "checks": 98,
+    "checks": 99,
     "areas": [
       "front-end",
       "backend",
@@ -19,7 +19,8 @@
       "frontend/bundles",
       "frontend/dns",
       "backend/realtime",
-      "edge/system-health"
+      "edge/system-health",
+      "backend/storage"
     ],
     "blindSpots": 0,
     "durationMinutes": null
