@@ -397,3 +397,4 @@
 {"t":"2026-10-29T08:56:57.619Z","s":"degraded","c":0,"bd":1,"f":"degraded","b":"ok","e":"ok","x":"ok","fp":"4571b05c","lat":{"doc":626,"db":469,"edge":211,"load":597,"lcp":874,"login":363},"bad":["frontend/static"]}
 {"t":"2026-10-29T16:12:33.286Z","s":"degraded","c":0,"bd":1,"f":"degraded","b":"ok","e":"ok","x":"ok","fp":"6255b90d","lat":{"doc":780,"db":382,"edge":339,"load":787,"lcp":1077,"login":406},"bad":["frontend/static"]}
 {"t":"2026-10-29T21:11:32.690Z","s":"degraded","c":0,"bd":1,"f":"degraded","b":"ok","e":"ok","x":"ok","fp":"cb796312","lat":{"doc":826,"db":676,"edge":643,"load":858,"lcp":1300,"login":400},"bad":["frontend/bundles","frontend/static"]}
+{"t":"2026-10-30T01:05:40.705Z","s":"degraded","c":0,"bd":1,"f":"degraded","b":"ok","e":"ok","x":"ok","fp":"66acbd33","lat":{"doc":538,"db":521,"edge":199,"load":493,"lcp":705,"login":521},"bad":["frontend/static"]}
