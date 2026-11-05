@@ -7,6 +7,19 @@ explica o porquê de cada decisão de projeto.
 
 ---
 
+## 05/11/2026 — "banco lento" no system-health era rede, não banco
+
+Medido: `EXPLAIN ANALYZE select count(*) from clinics` executa em **0,125 ms**;
+cache hit 99,6 %; 59 de 90 conexões, 2 ativas. Chamando o system-health 8 vezes
+seguidas daqui: tempo interno da função 190–390 ms, total 0,6–1,0 s. A função
+roda em `us-east-1` (cabeçalho `x-sb-edge-region`, a mais perto de quem chama)
+e o tempo é a ida até a API do Supabase. No histórico (432 execuções) o tempo
+total passava de 900 ms em 20,8 % das vezes. `dbWarn` subiu para **1500 ms**
+(5,1 %); `dbFail` segue em 4000. O limite vale para auth, PostgREST, consultas,
+storage e system-health — todos medem a mesma rede.
+
+---
+
 ## 05/11/2026 — disparo externo ligado (fim dos "dados velhos")
 
 **Problema:** a página mostrava "Estes dados estão velhos". Medido nas 40

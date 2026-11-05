@@ -102,7 +102,13 @@ export const CONFIG = {
   thresholds: {
     httpWarn: 1500,
     httpFail: 6000,
-    dbWarn: 900,
+    // 1500, não 900 (05/11/2026): a consulta do system-health leva ~0,1 ms
+    // dentro do Postgres; o que se mede aqui é rede — runner do GitHub nos
+    // EUA → API do Supabase (a function roda em us-east-1, perto do runner).
+    // Com 900, ~21% das execuções do histórico ficavam "degradado" sem
+    // problema real; com 1500, ~5%. Lentidão de verdade (>1,5 s) continua
+    // aparecendo e falha segue em dbFail.
+    dbWarn: 1500,
     dbFail: 4000,
     edgeWarn: 2500,
     edgeFail: 9000,
