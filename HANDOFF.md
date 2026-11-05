@@ -7,6 +7,34 @@ explica o porquê de cada decisão de projeto.
 
 ---
 
+## 05/11/2026 — disparo externo ligado (fim dos "dados velhos")
+
+**Problema:** a página mostrava "Estes dados estão velhos". Medido nas 40
+execuções `schedule` de 27/10 a 05/11: mesmo com o repositório **público**, o
+agendador do GitHub disparou só a cada **4 a 8 horas**, apesar do
+`cron: '17,47 * * * *'`. Já o `workflow_dispatch` começa na hora.
+
+**Solução aplicada (opção 2 da seção de 28/08):** cron-job.org, job
+"PrimeDoctor - Status", `7 * * * *` (minuto 7 de toda hora), `POST` em
+`https://api.github.com/repos/primemedicalcenter/primedoctor-monitor-saude/actions/workflows/monitor.yml/dispatches`
+com corpo `{"ref":"main"}` e PAT fine-grained (Actions: read and write, só
+este repositório). O token fica **só** no cron-job.org.
+
+- Verificado: o "Test run" devolveu 204 e criou a execução #441
+  (`workflow_dispatch`, 16:49:18 UTC) no mesmo segundo.
+- **Token expira em 06/11/2027.** Renovar antes, senão o disparo volta a
+  depender só do agendador do GitHub. O cron-job.org está com "notify on
+  failure" ligado: um 401 na hora da expiração gera e-mail.
+- O GitHub responde `Deprecation` para `X-GitHub-Api-Version: 2022-11-28`
+  (sunset 10/03/2028). Trocar a versão do cabeçalho até lá.
+- O `schedule` do workflow fica como reserva; `concurrency` impede execuções
+  simultâneas.
+- Mesmo dia: a sonda de arquivos estáticos passou a conferir `/favicon.png`
+  (o `.ico` foi removido do PrimeDoctor em 27/09 e deixava o front-end
+  degradado desde então) — commit `e8f28e7`.
+
+---
+
 ## 28/08 — o cron do GitHub degrada em repositório privado
 
 Medido nas execuções `schedule` reais: em 25/08 o cron das :17 disparava

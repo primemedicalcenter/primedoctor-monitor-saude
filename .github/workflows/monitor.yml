@@ -11,6 +11,10 @@ on:
     # definitivo é um disparador externo batendo no workflow_dispatch (ou
     # tornar o repositório público, que muda a prioridade e zera o custo de
     # minutos) — ver HANDOFF.md.
+    #
+    # Desde 05/11/2026 o disparo PRINCIPAL é externo: cron-job.org faz POST no
+    # workflow_dispatch no minuto 7 de toda hora (público, o agendador ainda
+    # disparava só a cada 4-8h). Este schedule ficou como reserva.
     - cron: '17,47 * * * *'
   workflow_dispatch:
     inputs:
