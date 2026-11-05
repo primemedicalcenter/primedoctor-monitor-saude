@@ -1,7 +1,7 @@
 [
   {
     "startedAt": "2026-09-28T00:00:12.276Z",
-    "endedAt": null,
+    "endedAt": "2026-11-05T15:40:54.042Z",
     "worst": "fail",
     "checks": 180,
     "areas": [
@@ -23,7 +23,7 @@
       "backend/storage"
     ],
     "blindSpots": 0,
-    "durationMinutes": null
+    "durationMinutes": 55661
   },
   {
     "startedAt": "2026-09-23T10:05:17.407Z",
