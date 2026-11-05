@@ -1,5 +1,22 @@
 [
   {
+    "startedAt": "2026-11-05T15:51:11.300Z",
+    "endedAt": null,
+    "worst": "degraded",
+    "checks": 2,
+    "areas": [
+      "backend",
+      "front-end"
+    ],
+    "items": [
+      "backend/system-health",
+      "frontend/document",
+      "frontend/bundles"
+    ],
+    "blindSpots": 0,
+    "durationMinutes": null
+  },
+  {
     "startedAt": "2026-09-28T00:00:12.276Z",
     "endedAt": "2026-11-05T15:40:54.042Z",
     "worst": "fail",
