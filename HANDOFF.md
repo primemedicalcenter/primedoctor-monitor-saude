@@ -7,6 +7,20 @@ explica o porquê de cada decisão de projeto.
 
 ---
 
+## 05/11/2026 — Cloudflare julgada pelo que afeta o PrimeDoctor
+
+O indicador geral da Cloudflare ficava em "Partial System Outage" quase o tempo
+todo (hoje: 80 de 300+ datacenters fora do normal, 35 fora do ar, e o único
+incidente aberto era Durable Objects na Europa). A sonda agora lê o
+`summary.json` e só acusa: incidente aberto em serviço que entrega o site (CDN,
+DNS, SSL, rede, WebSockets, firewall — lista em `CONFIG.cloudflare.services`),
+incidente citando os datacenters GYN/BSB/GRU/CNF/GIG, incidente grave sem
+componente informado, ou esses datacenters caídos (um = degradado, todos =
+falha). Nenhum desses datacenters no resumo → `unknown`. Testes em
+`tools/testar-cloudflare.mjs` (12 casos, no `npm test`).
+
+---
+
 ## 05/11/2026 — "banco lento" no system-health era rede, não banco
 
 Medido: `EXPLAIN ANALYZE select count(*) from clinics` executa em **0,125 ms**;

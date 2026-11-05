@@ -95,9 +95,32 @@ export const CONFIG = {
   upstreams: [
     { key: 'supabase', label: 'Supabase', url: 'https://status.supabase.com/api/v2/status.json' },
     { key: 'lovable', label: 'Lovable', url: 'https://status.lovable.dev/api/v2/status.json' },
-    { key: 'cloudflare', label: 'Cloudflare', url: 'https://www.cloudflarestatus.com/api/v2/status.json' },
+    // Cloudflare usa o summary.json, não o status.json: o indicador geral deles
+    // fica em "Partial System Outage" quase o tempo todo, porque sempre há
+    // algum dos 300+ datacenters fora do ar no mundo (o tráfego é desviado para
+    // o vizinho). Ver avaliarCloudflare() em probe/checks/upstream.mjs.
+    {
+      key: 'cloudflare',
+      label: 'Cloudflare',
+      url: 'https://www.cloudflarestatus.com/api/v2/summary.json',
+      mode: 'cloudflare',
+    },
     { key: 'github', label: 'GitHub', url: 'https://www.githubstatus.com/api/v2/status.json' },
   ],
+
+  // O que da Cloudflare pode afetar o PrimeDoctor: os serviços que entregam o
+  // site (CDN, DNS, SSL, rede, WebSockets do Realtime) e os datacenters que
+  // atendem os usuários (Goiânia e os vizinhos para onde o tráfego é desviado).
+  // Nomes exatos de cloudflarestatus.com; incidente nesses serviços ou queda
+  // nesses datacenters aparece, o resto do mundo não.
+  cloudflare: {
+    services: [
+      'CDN/Cache', 'WebSockets', 'Authoritative DNS', 'DNS Root Servers', 'Recursive DNS',
+      'Network', 'Infrastructure', 'SSL Certificate Provisioning', 'SSL for SaaS Provisioning',
+      'Firewall', 'Challenge Platform', 'Rules',
+    ],
+    datacenters: ['GYN', 'BSB', 'GRU', 'CNF', 'GIG'],
+  },
 
   thresholds: {
     httpWarn: 1500,

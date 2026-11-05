@@ -7,7 +7,7 @@
   "scripts": {
     "check": "node probe/run.mjs",
     "check:fast": "node probe/run.mjs --no-browser",
-    "test": "node tools/testar-logica.mjs && node tools/testar-e2e.mjs",
+    "test": "node tools/testar-logica.mjs && node tools/testar-cloudflare.mjs && node tools/testar-e2e.mjs",
     "test:page": "node tools/testar-pagina.mjs",
     "preview": "node tools/preview-server.mjs",
     "demo": "node tools/gerar-dados-demo.mjs"
