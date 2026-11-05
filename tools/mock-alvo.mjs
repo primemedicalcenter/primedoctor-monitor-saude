@@ -40,7 +40,7 @@ export function startMock(scenario = {}) {
         'Content-Type': 'text/html',
       });
     }
-    if (p.startsWith('/assets/') || ['/manifest.json', '/favicon.ico', '/robots.txt'].includes(p)) {
+    if (p.startsWith('/assets/') || ['/manifest.json', '/favicon.png', '/robots.txt'].includes(p)) {
       return send(200, '/* ok */', { 'Content-Type': 'text/plain' });
     }
 

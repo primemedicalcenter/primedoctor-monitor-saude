@@ -17,7 +17,7 @@ justamente para mostrar que caiu.
 
 | Área | O que a sonda faz | O que isso prova |
 |---|---|---|
-| **Hospedagem e front-end** | DNS, certificado TLS (validade **e** se cobre o domínio), documento HTML, cada bundle JS/CSS do build, `manifest.json`/`favicon.ico`/`robots.txt`, roteamento de link direto e o **domínio alternativo** servindo o mesmo build | o site está no ar, servindo um build completo, por todos os domínios |
+| **Hospedagem e front-end** | DNS, certificado TLS (validade **e** se cobre o domínio), documento HTML, cada bundle JS/CSS do build, `manifest.json`/`favicon.png`/`robots.txt`, roteamento de link direto e o **domínio alternativo** servindo o mesmo build | o site está no ar, servindo um build completo, por todos os domínios |
 | **Banco de dados e backend** | GoTrue, PostgREST, o healthcheck próprio do PrimeDoctor, leitura de 5 tabelas **com asserção de linhas**, WebSocket do Realtime e o Storage | o caminho rede → PostgREST → Postgres → RLS funciona de ponta a ponta |
 | **Funções de borda** | 13 edge functions críticas, via preflight CORS autenticado, mais um **canário 404** que valida a própria sonda | as funções existem, estão roteáveis e sobem |
 | **Experiência de carregamento** | Chromium real: TTFB, DOMContentLoaded, FCP, LCP, CLS, tempo até o app montar, login pelo formulário real, erros de console e requisições falhas | um usuário de verdade consegue abrir e entrar no sistema |

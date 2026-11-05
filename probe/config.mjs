@@ -9,7 +9,11 @@ export const CONFIG = {
     baseUrl: process.env.PD_APP_URL || 'https://primedoctor.app',
     publicRoute: '/auth',
     spaFallbackRoute: '/__monitor_spa_fallback_check__',
-    staticAssets: ['/manifest.json', '/favicon.ico', '/robots.txt'],
+    // favicon.png, não .ico: é o ícone que o index.html do PrimeDoctor declara
+    // (`<link rel="icon" href="/favicon.png">`). O favicon.ico foi removido do
+    // projeto em 27/09/2026 e o site não usa mais — exigir o .ico deixava a
+    // seção degradada para sempre sem nenhum efeito para o usuário.
+    staticAssets: ['/manifest.json', '/favicon.png', '/robots.txt'],
 
     // O mesmo app responde por mais de um endereço. Cada domínio tem seu
     // próprio DNS e seu próprio certificado, então um pode quebrar sozinho —

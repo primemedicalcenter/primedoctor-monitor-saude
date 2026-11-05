@@ -407,7 +407,7 @@ async function runLive() {
   const app = safeExternalUrl(state.status?.target?.url) || 'https://primedoctor.app';
 
   const tests = [
-    { label: 'Site alcançável', neutral: true, note: 'requisição sem CORS: prova DNS, TCP e TLS — NÃO prova que o site respondeu certo', run: () => opaque(app + '/favicon.ico') },
+    { label: 'Site alcançável', neutral: true, note: 'requisição sem CORS: prova DNS, TCP e TLS — NÃO prova que o site respondeu certo', run: () => opaque(app + '/favicon.png') },
     supa && { label: 'Autenticação (Supabase)', note: 'GET /auth/v1/health', run: () => probe(`${supa}/auth/v1/health`) },
     supa && { label: 'Healthcheck do backend', note: 'GET /functions/v1/system-health — consulta real no banco', run: () => probe(`${supa}/functions/v1/system-health`) },
   ].filter(Boolean);
