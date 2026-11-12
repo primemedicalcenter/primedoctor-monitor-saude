@@ -1,7 +1,7 @@
 [
   {
     "startedAt": "2026-11-12T19:59:11.711Z",
-    "endedAt": null,
+    "endedAt": "2026-11-12T21:07:40.818Z",
     "worst": "degraded",
     "checks": 2,
     "areas": [
@@ -11,7 +11,7 @@
       "frontend/bundles"
     ],
     "blindSpots": 0,
-    "durationMinutes": null
+    "durationMinutes": 68
   },
   {
     "startedAt": "2026-11-09T16:07:35.666Z",
