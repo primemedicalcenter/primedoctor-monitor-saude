@@ -749,3 +749,4 @@
 {"t":"2026-11-22T12:07:29.827Z","s":"ok","c":0,"bd":0,"f":"ok","b":"ok","e":"ok","x":"ok","fp":"826ab4d2","lat":{"doc":582,"db":471,"edge":207,"load":443,"lcp":676,"login":352},"bad":[]}
 {"t":"2026-11-22T13:07:30.373Z","s":"degraded","c":0,"bd":1,"f":"ok","b":"degraded","e":"ok","x":"ok","fp":"826ab4d2","lat":{"doc":798,"db":509,"edge":202,"load":374,"lcp":612,"login":333},"bad":["backend/postgrest"]}
 {"t":"2026-11-22T14:07:30.981Z","s":"ok","c":0,"bd":0,"f":"ok","b":"ok","e":"ok","x":"ok","fp":"826ab4d2","lat":{"doc":648,"db":323,"edge":223,"load":450,"lcp":724,"login":652},"bad":[]}
+{"t":"2026-11-22T15:07:27.212Z","s":"ok","c":0,"bd":0,"f":"ok","b":"ok","e":"ok","x":"ok","fp":"826ab4d2","lat":{"doc":549,"db":477,"edge":182,"load":533,"lcp":792,"login":527},"bad":[]}
