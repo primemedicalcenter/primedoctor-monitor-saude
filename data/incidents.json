@@ -1,5 +1,19 @@
 [
   {
+    "startedAt": "2026-11-25T19:07:55.462Z",
+    "endedAt": null,
+    "worst": "degraded",
+    "checks": 2,
+    "areas": [
+      "front-end"
+    ],
+    "items": [
+      "frontend/bundles"
+    ],
+    "blindSpots": 0,
+    "durationMinutes": null
+  },
+  {
     "startedAt": "2026-11-15T09:07:28.065Z",
     "endedAt": "2026-11-15T11:07:30.845Z",
     "worst": "degraded",
