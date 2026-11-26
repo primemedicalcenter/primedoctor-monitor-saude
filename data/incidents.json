@@ -89,75 +89,28 @@
     "durationMinutes": 71
   },
   {
-    "startedAt": "2026-09-28T00:00:12.276Z",
+    "startedAt": "2026-10-09T20:20:48.841Z",
     "endedAt": "2026-11-05T15:40:54.042Z",
     "worst": "fail",
-    "checks": 180,
+    "checks": 137,
     "areas": [
       "front-end",
       "backend",
-      "carregamento",
-      "integrações"
+      "integrações",
+      "carregamento"
     ],
     "items": [
       "frontend/static",
       "backend/system-health",
       "backend/database",
-      "experience/public.lcp",
       "frontend/document",
       "frontend/bundles",
-      "frontend/dns",
       "backend/realtime",
       "edge/system-health",
-      "backend/storage"
+      "backend/storage",
+      "experience/public.lcp"
     ],
     "blindSpots": 0,
-    "durationMinutes": 55661
-  },
-  {
-    "startedAt": "2026-09-23T10:05:17.407Z",
-    "endedAt": "2026-09-23T19:05:54.630Z",
-    "worst": "degraded",
-    "checks": 2,
-    "areas": [
-      "backend"
-    ],
-    "items": [
-      "backend/system-health"
-    ],
-    "blindSpots": 0,
-    "durationMinutes": 541
-  },
-  {
-    "startedAt": "2026-09-20T19:48:26.918Z",
-    "endedAt": "2026-09-21T00:32:26.142Z",
-    "worst": "fail",
-    "checks": 2,
-    "areas": [
-      "front-end",
-      "backend"
-    ],
-    "items": [
-      "frontend/document",
-      "backend/system-health"
-    ],
-    "blindSpots": 0,
-    "durationMinutes": 284
-  },
-  {
-    "startedAt": "2026-09-12T16:21:31.550Z",
-    "endedAt": "2026-09-12T21:28:00.538Z",
-    "worst": "degraded",
-    "checks": 2,
-    "areas": [
-      "front-end",
-      "backend"
-    ],
-    "items": [
-      "frontend/bundles",
-      "backend/system-health"
-    ],
-    "blindSpots": 0,
-    "durationMinutes": 306
+    "durationMinutes": 38600
   }
 ]
