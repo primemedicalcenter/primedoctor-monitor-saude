@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T21:07:31.244Z",
-  "durationMs": 10616,
+  "generatedAt": "2026-11-27T22:07:32.653Z",
+  "durationMs": 15094,
   "target": {
     "name": "PrimeDoctor",
     "url": "https://primedoctor.app",
@@ -20,16 +20,16 @@
       {
         "host": "www.githubstatus.com",
         "ok": true,
-        "ms": 54
+        "ms": 50
       },
       {
         "host": "cloudflare-dns.com",
         "ok": true,
-        "ms": 149
+        "ms": 20
       }
     ]
   },
-  "buildFingerprint": "events.1851fa895e86309c.js|index-BOJJ_xPy.js|index-K6N9y1Kn.css|vendor-date-GGac7u6e.js|vendor-icons-BjvWWPrJ.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js",
+  "buildFingerprint": "events.1851fa895e86309c.js|index-CpVYMkD6.css|index-DsOnTawu.js|vendor-date-GGac7u6e.js|vendor-icons-xSpX3SaE.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js",
   "rootCause": null,
   "overall": {
     "status": "ok",
@@ -43,13 +43,13 @@
       "key": "frontend",
       "label": "Hospedagem e front-end",
       "status": "ok",
-      "latencyMs": 1019,
+      "latencyMs": 568,
       "items": [
         {
           "key": "dns",
           "label": "Resolução DNS",
           "status": "ok",
-          "latencyMs": 61,
+          "latencyMs": 24,
           "detail": "1 endereço(s) · primedoctor.app",
           "meta": {
             "addresses": [
@@ -61,7 +61,7 @@
           "key": "tls",
           "label": "Certificado TLS",
           "status": "ok",
-          "latencyMs": 80,
+          "latencyMs": 32,
           "detail": "válido · expira em 55 dia(s) · Google Trust Services",
           "meta": {
             "daysLeft": 55,
@@ -74,7 +74,7 @@
           "key": "document",
           "label": "Documento HTML",
           "status": "ok",
-          "latencyMs": 1019,
+          "latencyMs": 568,
           "detail": "HTTP 200 · 3.7 kB · Cloudflare",
           "meta": {
             "title": "PrimeDoctor++",
@@ -82,35 +82,35 @@
             "host": {
               "server": "cloudflare",
               "via": null,
-              "cfRay": "a6141a5ebc81606f-ORD",
+              "cfRay": "a614724bee3197d9-SJC",
               "cacheStatus": null,
               "detected": [
                 "Cloudflare"
               ]
             },
-            "buildFingerprint": "events.1851fa895e86309c.js|index-BOJJ_xPy.js|index-K6N9y1Kn.css|vendor-date-GGac7u6e.js|vendor-icons-BjvWWPrJ.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
+            "buildFingerprint": "events.1851fa895e86309c.js|index-CpVYMkD6.css|index-DsOnTawu.js|vendor-date-GGac7u6e.js|vendor-icons-xSpX3SaE.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
           }
         },
         {
           "key": "bundles",
           "label": "Bundles do build (JS/CSS)",
           "status": "ok",
-          "latencyMs": 795,
+          "latencyMs": 462,
           "detail": "8 bundle(s) OK",
           "meta": {
             "assets": [
               {
-                "url": "/assets/index-BOJJ_xPy.js",
+                "url": "/assets/index-DsOnTawu.js",
                 "status": 200,
-                "ms": 468,
+                "ms": 462,
                 "ok": true,
                 "error": null,
-                "etag": "W/\"eb635dbe4462b1360519a8913408579b\""
+                "etag": "W/\"0e60125f00b3e12556d0a65aaa0ede0e\""
               },
               {
                 "url": "/assets/vendor-react-B4XEBLQC.js",
                 "status": 200,
-                "ms": 226,
+                "ms": 259,
                 "ok": true,
                 "error": null,
                 "etag": "W/\"8ad9e3773fd4850a58b988f02d669301\""
@@ -118,7 +118,7 @@
               {
                 "url": "/assets/vendor-supabase-BnHv9Op-.js",
                 "status": 200,
-                "ms": 200,
+                "ms": 237,
                 "ok": true,
                 "error": null,
                 "etag": "W/\"d8325aa56ffe65777bb745744e682c0a\""
@@ -126,73 +126,73 @@
               {
                 "url": "/assets/vendor-radix-DYCGeFdf.js",
                 "status": 200,
-                "ms": 155,
+                "ms": 189,
                 "ok": true,
                 "error": null,
                 "etag": "W/\"0c43ac81bbc6758c11fb7124c628132f\""
               },
               {
-                "url": "/assets/vendor-icons-BjvWWPrJ.js",
+                "url": "/assets/vendor-icons-xSpX3SaE.js",
                 "status": 200,
-                "ms": 204,
+                "ms": 278,
                 "ok": true,
                 "error": null,
-                "etag": "W/\"8bd2cbc8892c5789a8a7438e0d4ad5c7\""
+                "etag": "W/\"0f03340eb544f0c61b3c2a22194879e5\""
               },
               {
                 "url": "/assets/vendor-date-GGac7u6e.js",
                 "status": 200,
-                "ms": 602,
+                "ms": 187,
                 "ok": true,
                 "error": null,
                 "etag": "W/\"939e98f7581008d884681eacf2a436bf\""
               },
               {
-                "url": "/assets/index-K6N9y1Kn.css",
+                "url": "/assets/index-CpVYMkD6.css",
                 "status": 200,
-                "ms": 795,
+                "ms": 269,
                 "ok": true,
                 "error": null,
-                "etag": "W/\"5b6d4798ec213e321f2d50f92fd27f19\""
+                "etag": "W/\"2cb209fa9d353eacb35f285b2edb0321\""
               },
               {
                 "url": "/__l5e/events.1851fa895e86309c.js",
                 "status": 200,
-                "ms": 33,
+                "ms": 26,
                 "ok": true,
                 "error": null,
                 "etag": null
               }
             ],
-            "buildFingerprint": "events.1851fa895e86309c.js|index-BOJJ_xPy.js|index-K6N9y1Kn.css|vendor-date-GGac7u6e.js|vendor-icons-BjvWWPrJ.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
+            "buildFingerprint": "events.1851fa895e86309c.js|index-CpVYMkD6.css|index-DsOnTawu.js|vendor-date-GGac7u6e.js|vendor-icons-xSpX3SaE.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
           }
         },
         {
           "key": "static",
           "label": "Arquivos estáticos (manifest, favicon, robots)",
           "status": "ok",
-          "latencyMs": 525,
+          "latencyMs": 624,
           "detail": "3 arquivo(s) OK",
           "meta": {
             "files": [
               {
                 "path": "/manifest.json",
                 "status": 200,
-                "ms": 574,
+                "ms": 732,
                 "ok": true,
                 "error": null
               },
               {
                 "path": "/favicon.png",
                 "status": 200,
-                "ms": 483,
+                "ms": 344,
                 "ok": true,
                 "error": null
               },
               {
                 "path": "/robots.txt",
                 "status": 200,
-                "ms": 519,
+                "ms": 796,
                 "ok": true,
                 "error": null
               }
@@ -203,7 +203,7 @@
           "key": "spa-fallback",
           "label": "Roteamento SPA (link direto)",
           "status": "ok",
-          "latencyMs": 62,
+          "latencyMs": 43,
           "detail": "rotas internas devolvem o app corretamente",
           "meta": {}
         }
@@ -212,14 +212,14 @@
         "host": {
           "server": "cloudflare",
           "via": null,
-          "cfRay": "a6141a5ebc81606f-ORD",
+          "cfRay": "a614724bee3197d9-SJC",
           "cacheStatus": null,
           "detected": [
             "Cloudflare"
           ]
         },
         "url": "https://primedoctor.app",
-        "buildFingerprint": "events.1851fa895e86309c.js|index-BOJJ_xPy.js|index-K6N9y1Kn.css|vendor-date-GGac7u6e.js|vendor-icons-BjvWWPrJ.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
+        "buildFingerprint": "events.1851fa895e86309c.js|index-CpVYMkD6.css|index-DsOnTawu.js|vendor-date-GGac7u6e.js|vendor-icons-xSpX3SaE.js|vendor-radix-DYCGeFdf.js|vendor-react-B4XEBLQC.js|vendor-supabase-BnHv9Op-.js"
       },
       "detail": "6 verificação(ões) OK"
     },
@@ -227,13 +227,13 @@
       "key": "backend",
       "label": "Banco de dados e backend",
       "status": "ok",
-      "latencyMs": 439,
+      "latencyMs": 650,
       "items": [
         {
           "key": "supabase-tls",
           "label": "Certificado TLS do Supabase",
           "status": "ok",
-          "latencyMs": 26,
+          "latencyMs": 34,
           "detail": "válido · expira em 55 dia(s) · Google Trust Services",
           "meta": {
             "daysLeft": 55,
@@ -246,7 +246,7 @@
           "key": "auth",
           "label": "Serviço de autenticação",
           "status": "ok",
-          "latencyMs": 404,
+          "latencyMs": 516,
           "detail": "no ar · v2.199.0",
           "meta": {
             "version": "v2.199.0"
@@ -256,7 +256,7 @@
           "key": "postgrest",
           "label": "API do banco (PostgREST)",
           "status": "ok",
-          "latencyMs": 384,
+          "latencyMs": 529,
           "detail": "no ar",
           "meta": {
             "probeTable": "profiles"
@@ -266,17 +266,17 @@
           "key": "system-health",
           "label": "Healthcheck do PrimeDoctor (banco)",
           "status": "ok",
-          "latencyMs": 439,
-          "detail": "banco respondendo em 377ms",
+          "latencyMs": 650,
+          "detail": "banco respondendo em 609ms",
           "meta": {
-            "dbLatencyMs": 377
+            "dbLatencyMs": 609
           }
         },
         {
           "key": "database",
           "label": "Consultas ao banco (com asserção de RLS)",
           "status": "ok",
-          "latencyMs": 343,
+          "latencyMs": 494,
           "detail": "5 tabela(s) OK",
           "meta": {
             "probes": [
@@ -284,41 +284,41 @@
                 "table": "profiles",
                 "label": "Perfis",
                 "status": "ok",
-                "ms": 350,
+                "ms": 500,
                 "rows": 13,
-                "detail": "13 linha(s) visíveis em 350ms"
+                "detail": "13 linha(s) visíveis em 500ms"
               },
               {
                 "table": "clinic_members",
                 "label": "Membros de clínica",
                 "status": "ok",
-                "ms": 343,
+                "ms": 494,
                 "rows": 19,
-                "detail": "19 linha(s) visíveis em 343ms"
+                "detail": "19 linha(s) visíveis em 494ms"
               },
               {
                 "table": "clinics",
                 "label": "Clínicas",
                 "status": "ok",
-                "ms": 161,
+                "ms": 194,
                 "rows": 1,
-                "detail": "1 linha(s) visíveis em 161ms"
+                "detail": "1 linha(s) visíveis em 194ms"
               },
               {
                 "table": "consultation_types",
                 "label": "Tipos de consulta",
                 "status": "ok",
-                "ms": 349,
+                "ms": 515,
                 "rows": 7,
-                "detail": "7 linha(s) visíveis em 349ms"
+                "detail": "7 linha(s) visíveis em 515ms"
               },
               {
                 "table": "event_statuses",
                 "label": "Status de agenda",
                 "status": "ok",
-                "ms": 124,
+                "ms": 212,
                 "rows": 17,
-                "detail": "17 linha(s) visíveis em 124ms"
+                "detail": "17 linha(s) visíveis em 212ms"
               }
             ]
           }
@@ -327,7 +327,7 @@
           "key": "realtime",
           "label": "Realtime (tempo real)",
           "status": "ok",
-          "latencyMs": 130,
+          "latencyMs": 72,
           "detail": "websocket conectado",
           "meta": {}
         },
@@ -335,7 +335,7 @@
           "key": "storage",
           "label": "Armazenamento de arquivos",
           "status": "ok",
-          "latencyMs": 143,
+          "latencyMs": 203,
           "detail": "serviço respondendo e acessível",
           "meta": {}
         }
@@ -350,14 +350,14 @@
       "key": "edge",
       "label": "Funções de borda (integrações)",
       "status": "ok",
-      "latencyMs": 299,
+      "latencyMs": 649,
       "items": [
         {
           "key": "__canary__",
           "label": "Autoteste da sonda (canário 404)",
           "critical": true,
           "status": "ok",
-          "latencyMs": 52,
+          "latencyMs": 61,
           "detail": "slug inexistente devolveu 404 — a detecção está funcionando",
           "meta": {
             "httpStatus": 404
@@ -368,7 +368,7 @@
           "label": "Healthcheck do backend",
           "critical": true,
           "status": "ok",
-          "latencyMs": 463,
+          "latencyMs": 778,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -384,7 +384,7 @@
           "label": "Gateway WhatsApp",
           "critical": true,
           "status": "ok",
-          "latencyMs": 302,
+          "latencyMs": 661,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -400,7 +400,7 @@
           "label": "Webhook Z-API",
           "critical": true,
           "status": "ok",
-          "latencyMs": 349,
+          "latencyMs": 887,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -416,7 +416,7 @@
           "label": "Webhook Meta WhatsApp",
           "critical": true,
           "status": "ok",
-          "latencyMs": 448,
+          "latencyMs": 973,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -432,7 +432,7 @@
           "label": "Captação de leads",
           "critical": true,
           "status": "ok",
-          "latencyMs": 309,
+          "latencyMs": 685,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -448,7 +448,7 @@
           "label": "Envio de WhatsApp",
           "critical": true,
           "status": "ok",
-          "latencyMs": 280,
+          "latencyMs": 648,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -464,7 +464,7 @@
           "label": "Google Agenda",
           "critical": true,
           "status": "ok",
-          "latencyMs": 267,
+          "latencyMs": 545,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -480,7 +480,7 @@
           "label": "Motor de IA",
           "critical": false,
           "status": "ok",
-          "latencyMs": 297,
+          "latencyMs": 592,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -496,7 +496,7 @@
           "label": "Atendente IA",
           "critical": false,
           "status": "ok",
-          "latencyMs": 389,
+          "latencyMs": 819,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -512,7 +512,7 @@
           "label": "Fila de jobs (Inngest)",
           "critical": false,
           "status": "ok",
-          "latencyMs": 389,
+          "latencyMs": 781,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -528,7 +528,7 @@
           "label": "Fichas de paciente",
           "critical": false,
           "status": "ok",
-          "latencyMs": 235,
+          "latencyMs": 531,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -544,7 +544,7 @@
           "label": "Impressão",
           "critical": false,
           "status": "ok",
-          "latencyMs": 242,
+          "latencyMs": 516,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -560,7 +560,7 @@
           "label": "Formulários embed",
           "critical": false,
           "status": "ok",
-          "latencyMs": 162,
+          "latencyMs": 603,
           "detail": "publicada e roteável · HTTP 200 · pronta (secrets presentes)",
           "meta": {
             "httpStatus": 200,
@@ -582,23 +582,23 @@
       "key": "experience",
       "label": "Experiência de carregamento",
       "status": "ok",
-      "latencyMs": 464,
+      "latencyMs": 496,
       "items": [
         {
           "key": "public.load",
           "label": "Tela de acesso — tempo até o app aparecer",
           "status": "ok",
-          "latencyMs": 464,
-          "detail": "app pronto em 464ms · TTFB 37ms",
+          "latencyMs": 496,
+          "detail": "app pronto em 496ms · TTFB 51ms",
           "meta": {
-            "dnsMs": 2,
-            "tcpMs": 26,
-            "ttfbMs": 37,
-            "downloadMs": 2,
-            "domContentLoadedMs": 413,
-            "transferBytes": 2180,
-            "lcpMs": 712,
-            "fcpMs": 524,
+            "dnsMs": 1,
+            "tcpMs": 28,
+            "ttfbMs": 51,
+            "downloadMs": 3,
+            "domContentLoadedMs": 446,
+            "transferBytes": 2175,
+            "lcpMs": 792,
+            "fcpMs": 556,
             "cls": 0.003,
             "domNodes": 103
           }
@@ -607,8 +607,8 @@
           "key": "public.lcp",
           "label": "Tela de acesso — primeira tela visível",
           "status": "ok",
-          "latencyMs": 712,
-          "detail": "maior elemento pintado em 712ms · primeiro conteúdo em 524ms",
+          "latencyMs": 792,
+          "detail": "maior elemento pintado em 792ms · primeiro conteúdo em 556ms",
           "meta": {
             "cls": 0.003
           }
@@ -648,8 +648,8 @@
           "key": "authed.components",
           "label": "Login e área interna — componentes montados",
           "status": "ok",
-          "latencyMs": 559,
-          "detail": "login e carregamento da área interna em 0.6s",
+          "latencyMs": 694,
+          "detail": "login e carregamento da área interna em 0.7s",
           "meta": {}
         },
         {
@@ -690,7 +690,7 @@
           "key": "supabase",
           "label": "Supabase",
           "status": "ok",
-          "latencyMs": 257,
+          "latencyMs": 246,
           "detail": "All Systems Operational",
           "meta": {
             "indicator": "none"
@@ -700,7 +700,7 @@
           "key": "lovable",
           "label": "Lovable",
           "status": "ok",
-          "latencyMs": 249,
+          "latencyMs": 235,
           "detail": "All Systems Operational",
           "meta": {
             "indicator": "none"
@@ -709,7 +709,7 @@
         {
           "key": "cloudflare",
           "label": "Cloudflare",
-          "latencyMs": 181,
+          "latencyMs": 179,
           "status": "ok",
           "detail": "nada que afete o PrimeDoctor · 1 incidente(s) em serviços que o PrimeDoctor não usa",
           "meta": {
@@ -727,7 +727,7 @@
           "key": "github",
           "label": "GitHub",
           "status": "ok",
-          "latencyMs": 6,
+          "latencyMs": 7,
           "detail": "All Systems Operational",
           "meta": {
             "indicator": "none"
@@ -740,6 +740,6 @@
   ],
   "runner": {
     "source": "github-actions",
-    "runUrl": "https://github.com/primemedicalcenter/primedoctor-monitor-saude/actions/runs/46068162402"
+    "runUrl": "https://github.com/primemedicalcenter/primedoctor-monitor-saude/actions/runs/46074618035"
   }
 }
