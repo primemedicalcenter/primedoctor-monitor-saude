@@ -1,5 +1,21 @@
 [
   {
+    "startedAt": "2026-11-27T15:38:02.703Z",
+    "endedAt": null,
+    "worst": "degraded",
+    "checks": 2,
+    "areas": [
+      "carregamento",
+      "front-end"
+    ],
+    "items": [
+      "experience/public.lcp",
+      "frontend/bundles"
+    ],
+    "blindSpots": 0,
+    "durationMinutes": null
+  },
+  {
     "startedAt": "2026-11-25T19:07:55.462Z",
     "endedAt": "2026-11-25T21:07:27.906Z",
     "worst": "degraded",
